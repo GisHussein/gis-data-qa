@@ -1,0 +1,41 @@
+# What a "coastal development plots" layer is supposed to look like.
+#
+# The point of keeping this in the repository rather than in someone's head is
+# that the rules become reviewable: a change to what counts as valid data shows
+# up as a diff, not as a surprise three months later.
+
+name: coastal_development_plots
+
+# Geometry ------------------------------------------------------------------
+geometry_type: Polygon
+min_area: 100                # m2 - anything smaller is a clip artefact
+max_vertices: 5000           # boundaries heavier than this slow every query
+allow_overlaps: false        # plots tile the coast, they do not stack
+allow_duplicate_geometries: false
+
+# Coordinate reference system ----------------------------------------------
+crs: "EPSG:32636"            # UTM zone 36N, the zone for the Egyptian Red Sea
+allow_missing_crs: false
+# Generous envelope around the Marsa Alam - Ras Banas stretch, in UTM metres.
+coordinate_bounds: [300000, 2600000, 600000, 2950000]
+
+# Attributes ----------------------------------------------------------------
+fields:
+  - name: plot_id
+    dtype: str
+    required: true
+    nullable: false
+    unique: true
+
+  - name: status
+    dtype: str
+    required: true
+    nullable: false
+    allowed: [approved, pending, rejected]
+
+  - name: area_m2
+    dtype: float
+    required: true
+    nullable: true
+    min: 0
+    max_null_fraction: 0.05
