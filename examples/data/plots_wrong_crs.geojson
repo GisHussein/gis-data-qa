@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "plots_wrong_crs",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32636" } },
+"features": [
+{ "type": "Feature", "properties": { "plot_id": "PLT-101", "status": "approved", "area_m2": 2500.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 34.9, 25.2 ], [ 34.901, 25.2 ], [ 34.901, 25.201 ], [ 34.9, 25.201 ], [ 34.9, 25.2 ] ] ] } },
+{ "type": "Feature", "properties": { "plot_id": "PLT-102", "status": "approved", "area_m2": 2500.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 34.902, 25.2 ], [ 34.903, 25.2 ], [ 34.903, 25.201 ], [ 34.902, 25.201 ], [ 34.902, 25.2 ] ] ] } }
+]
+}

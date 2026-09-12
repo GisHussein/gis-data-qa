@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "plots_clean",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32636" } },
+"features": [
+{ "type": "Feature", "properties": { "plot_id": "PLT-001", "status": "approved", "area_m2": 2500.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 420000.0, 2790000.0 ], [ 420050.0, 2790000.0 ], [ 420050.0, 2790050.0 ], [ 420000.0, 2790050.0 ], [ 420000.0, 2790000.0 ] ] ] } },
+{ "type": "Feature", "properties": { "plot_id": "PLT-002", "status": "approved", "area_m2": 2500.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 420100.0, 2790000.0 ], [ 420150.0, 2790000.0 ], [ 420150.0, 2790050.0 ], [ 420100.0, 2790050.0 ], [ 420100.0, 2790000.0 ] ] ] } },
+{ "type": "Feature", "properties": { "plot_id": "PLT-003", "status": "pending", "area_m2": 2500.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 420200.0, 2790000.0 ], [ 420250.0, 2790000.0 ], [ 420250.0, 2790050.0 ], [ 420200.0, 2790050.0 ], [ 420200.0, 2790000.0 ] ] ] } },
+{ "type": "Feature", "properties": { "plot_id": "PLT-004", "status": "pending", "area_m2": 2500.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 420300.0, 2790000.0 ], [ 420350.0, 2790000.0 ], [ 420350.0, 2790050.0 ], [ 420300.0, 2790050.0 ], [ 420300.0, 2790000.0 ] ] ] } },
+{ "type": "Feature", "properties": { "plot_id": "PLT-005", "status": "rejected", "area_m2": 2500.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 420400.0, 2790000.0 ], [ 420450.0, 2790000.0 ], [ 420450.0, 2790050.0 ], [ 420400.0, 2790050.0 ], [ 420400.0, 2790000.0 ] ] ] } }
+]
+}
